@@ -146,7 +146,7 @@ nav a:hover, nav a:focus{
 first div in the grid and place it in the grid. */
 
 .container>:first-child{
-  grid-column: 1 / span 3;
+  grid-column: 1 / -1;
   grid-row: 1 / span 1;
   background-image: url('../images/header.jpg');
   background-repeat: no-repeat;
@@ -191,9 +191,6 @@ first div in the grid and place it in the grid. */
     grid-template-columns: 50px auto 500px auto 50px ;
   }
    /* Steps 11 and 12: Update the grid-column property of the grid's children (where-needed)*/
-   .container>:first-child{
-    grid-column: 1 / span 5;
-  }
   .about, .clients, .method-image, .contact-image{
     grid-column: 3 / span 2;
   }
